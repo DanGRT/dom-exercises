@@ -1,0 +1,10 @@
+.pages{
+  display: flex;
+  flex-direction: row;
+}
+
+li{
+  border: 1px black solid;
+  list-style: none;
+  padding: 5px
+  }

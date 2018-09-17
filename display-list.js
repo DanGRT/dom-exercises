@@ -81,3 +81,20 @@ const characters = [
 		"eye_color": "blue-gray"
 	}
 ];
+
+
+const keys = Object.keys(characters[0])
+
+const characterList = characters.map(character => {
+const values = Object.values(character)
+let output = keys.map(key => {
+	return (`<li>${key}: ${character[key]}</li>`)
+})
+return output.join("")
+
+
+})
+console.log(characterList)
+const charactersElement = document.querySelector(".characters")
+
+charactersElement.innerHTML = characterList.join("")
